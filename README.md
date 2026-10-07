@@ -14,7 +14,7 @@
 
 安装示例：`npx skills add full-stack-skills/git-skills --skill git-workflow`。仓库：https://github.com/full-stack-skills/git-skills 。安装行为由使用者执行，本次没有安装到宿主。
 
-技能可只读独立工作；GitFlow 插件提供确定性规则、Hook/MCP 与显式变更。不把分支治理通过当质量/CI/生产通过。共享规范推荐 .gitflow/workflow.json；Git 元数据保存激活与逐工作树日志。
+技能可只读独立工作；GitFlow 插件提供确定性规则、Hook/MCP 与显式变更。不把分支治理通过当质量/CI/生产通过。共享规范推荐 `.gitflow/workflow.json`；生效快照、来源与逐工作树日志统一存入 `.gitflow/state/`，由 Git 本地 exclude 排除。
 
 [来源](sources.json) 与 profiles/ 为模板事实源；技能内参考自包含，可粒度安装。首次空仓主线提交需要明确初始提交规则，模板不会自动免检。
 
