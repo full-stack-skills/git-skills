@@ -1,0 +1,12 @@
+{
+  "name": "git-skills",
+  "version": "0.1.0",
+  "description": "九个项目 Git 分支治理技能",
+  "author": {
+    "name": "Full Stack Skills"
+  },
+  "license": "Apache-2.0",
+  "skills": "./skills",
+  "repository": "https://github.com/full-stack-skills/git-skills",
+  "homepage": "https://github.com/full-stack-skills/git-skills"
+}
