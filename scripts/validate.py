@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 
 ROOT=Path(__file__).resolve().parents[1]
-EXPECTED={'git-awesome','git-workflow','git-init','git-branch','git-audit','git-commit','git-sync','git-release','git-recovery'}
+EXPECTED={'gitguard-awesome','gitguard-workflow','gitguard-init','gitguard-branch','gitguard-audit','gitguard-commit','gitguard-sync','gitguard-release','gitguard-recovery'}
 
 def validate():
     errors=[]
@@ -30,7 +30,7 @@ def validate():
     if len(sources['sources'])!=9:errors.append('来源模型数错误')
     for file in (ROOT/'profiles').glob('*.json'):
         p=json.loads(file.read_text())
-        for name in ('git-init','git-workflow'):
+        for name in ('gitguard-init','gitguard-workflow'):
             if (ROOT/'skills'/name/'references/profiles'/file.name).read_bytes()!=file.read_bytes():errors.append('模板快照漂移')
     return errors
 
